@@ -1,4 +1,4 @@
-package pkgHelper;
+package pkgGame;
 
 import pkgHelper.LatinSquare;
 

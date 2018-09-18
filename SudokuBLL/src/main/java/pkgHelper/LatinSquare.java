@@ -217,7 +217,7 @@ public class LatinSquare {
 		// TODO: Return 'true' if...
 		// Each row and column doesn't contain duplicates
 		// If each element in the first row is found in every other row
-		// If each element in the first coumn is found in every other column
+		// If each element in the first column is found in every other column
 
 		// Check to see if the any row or column has duplicates. If they do, return
 		// false;
@@ -231,6 +231,7 @@ public class LatinSquare {
 				return false;
 		}
 
+		//do the values in the first row exist in every other row
 		for (int i = 1; i < LatinSquare.length; i++) {
 
 			if (!hasAllValues(getRow(0), getRow(i))) {
