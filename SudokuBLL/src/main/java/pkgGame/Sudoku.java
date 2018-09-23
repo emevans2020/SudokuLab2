@@ -49,12 +49,13 @@ public class Sudoku extends LatinSquare {
 		}
 	}
 	
-	protected int [] getRegion (int iCol, int iRow) {
+	public int [] getRegion (int iCol, int iRow) {
 		int i = (iCol /iSqrtSize) + ((iRow/iSqrtSize)*iSqrtSize);
 		return getRegion (i);
+		
 	}
 	
-	protected boolean isSudoku() {
+	public boolean isSudoku() {
 		if ()
 		//has to be latinsquare
 		//test every region to make sure every region is found in first row
@@ -66,7 +67,7 @@ public class Sudoku extends LatinSquare {
 	 * At least one of the elements is a zero
 	 * @return
 	 */
-	protected boolean isPartialSudoku() {
+	public boolean isPartialSudoku() {
 		int i;
 		
 		if (super.isLatinSquare() == true && super.ContainsZero() == true ) {
